@@ -1,3 +1,3 @@
-Menu navigation improved.
-Selection from which numbers should be generated.
-You can also use the complete alphabet without having to type it in.
+There are only innovations for the German language!
+
+Loops Interception if too many letters are to be created when selecting the alphabet
