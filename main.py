@@ -187,7 +187,7 @@ def german():
     print("=================")
     print("Zufallsgenerator")
     print("=================")
-    print("--Version: 1.1")
+    print("--Version: 1.1.1")
     print("--Coded by redhead--")
     print("--All rights by redhead--")
     print("--Contact: read-head@t-online.de--")
@@ -266,6 +266,7 @@ def german():
         print("Wie viele Buchstaben möchten sie zufällig generiert haben?")
         input2 = str(input())
         input1 = input2
+        input9 = int(input2)
 
         if anzahl == "Komplettes Alphabet":
             wieviel = input1
@@ -293,7 +294,25 @@ def german():
         time.sleep(0.5)
 
         if anzahl == "Komplettes Alphabet":
-            wieviel = int(input2)
+            try:
+                if input9 > 29:
+                    print("Die eingegeben Zahl ist größer als das Alphabet, die Zahl darf maximal den Wert 29 Betragen")
+                    print()
+                    time.sleep(1)
+                    buchstabe()
+
+                elif input9 > 28:
+                    print("Sie dürfen maximal 28 Buchstaben vom Alphabet generieren lassen, sonst gibt es ein Programm absturtz!")
+                    time.sleep(1)
+                    print()
+                    buchstabe()
+                elif input9 < 29:
+                    wieviel = int(input2)
+            except:
+                print("Falsche Eingabe...")
+                print()
+                time.sleep(1)
+                buchstabe()
 
 
         if not anzahlprogramm == 0:
