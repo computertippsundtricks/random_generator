@@ -1,4 +1,4 @@
-INSTALLATION (Windows, Linux)
+INSTALLATION (Windows, Linux):
 
 1. Make sure you have Python installed on your operating system (OS). You can check this on Linux with the following command: "python3 -V"
 
